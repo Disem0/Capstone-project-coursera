@@ -6,8 +6,11 @@ export default function Main(){
     return(
         <main>
         <section className='specials'>
-          <h1>This week specials</h1>
-          <button>Online Menu</button>
+            <section className='container-specials'>
+          <h1 className='Hspecials'>This week specials!</h1>
+          <button className="Bspecials">Online Menu</button>
+          </section>
+          <section className='container-list'>
           <figure className='special-item'>
             <img alt="Greek-Salad-Photo" src={GreekSalad} width='150px'/>
             <figcaption>
@@ -30,11 +33,12 @@ export default function Main(){
             <img alt="Lemon-Dessert-Photo" src={LemonDessert} width='150px'/>
             <figcaption>
             <h3>Lemon Dessert</h3>
-            <p>A refreshing dessert with a zesty lemon filling and a buttery crust.</p>
             <p>$5.00</p>
+            <p>A refreshing dessert with a zesty lemon filling and a buttery crust.</p>
             <button>Order a delivery</button>
             </figcaption>
           </figure>
+          </section>
         </section>
       </main>
     )
