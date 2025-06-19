@@ -12,7 +12,7 @@ export default function Main(){
           </section>
           <section className='container-list'>
           <figure className='special-item'>
-            <img alt="Greek-Salad-Photo" src={GreekSalad} width='150px'/>
+            <img alt="Greek-Salad-Photo" src={GreekSalad} width='265px' height='185px'/>
             <figcaption>
             <h3>Greek Salad</h3>
             <p>$12.99</p>
@@ -21,7 +21,7 @@ export default function Main(){
             </figcaption>
           </figure>
           <figure className='special-item'>
-            <img alt="Bruschetta-Photo" src={Bruschetta} width='150px'/>
+            <img alt="Bruschetta-Photo" src={Bruschetta} width='265px' height='185px'/>
             <figcaption>
             <h3>Bruschetta</h3>
             <p>$5.99</p>
@@ -30,7 +30,7 @@ export default function Main(){
             </figcaption>
           </figure>
           <figure className='special-item'>
-            <img alt="Lemon-Dessert-Photo" src={LemonDessert} width='150px'/>
+            <img alt="Lemon-Dessert-Photo" src={LemonDessert} width='265px' height='185px' />
             <figcaption>
             <h3>Lemon Dessert</h3>
             <p>$5.00</p>
