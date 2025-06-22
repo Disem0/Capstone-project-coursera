@@ -1,17 +1,28 @@
 import logo from '../iconsAssets/Logo .png';
 import '../index.css';
+import { Link } from 'react-router-dom';
+
 export default function Nav() {
+    const logoSrc = logo;
     return(
+    <div>
         <nav className='navbar'>
-            <ul>
-                    <li><a href='http://172.20.10.3:3000'><img src={logo} alt='Little-lemon-logo-image'/></a></li>
-                    <li><a>HOME</a></li>
-                    <li><a>ABOUT</a></li>
-                    <li><a>MENU</a></li>
-                    <li><a>RESERVATION</a></li>
-                    <li><a>ORDER ONLINE</a></li>
-                    <li><a>LOGIN</a></li>
-                </ul>
-            </nav>
+            <Link to="/" className="logo-link">
+                <img 
+                    src={logoSrc} 
+                    alt="Little Lemon Logo" 
+                    className="navbar-logo"
+                />
+            </Link>
+            <div className="nav-links">
+                <Link to="/">HOME</Link>
+                <Link to='/about'>ABOUT</Link>
+                <Link to='/menu'>MENU</Link>
+                <Link to="/reservation">RESERVATION</Link>
+                <Link to='/order-online'>ORDER ONLINE</Link>
+                <Link to='/login'>LOGIN</Link>
+            </div>
+        </nav>
+    </div>
     )
 }
