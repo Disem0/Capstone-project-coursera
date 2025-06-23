@@ -56,6 +56,19 @@ code {
   justify-self: end;
 }
 
+.online-menu-button {
+  font-family: Markazi Text, serif;
+  font-size: 2.5rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 16px;
+  background-color: #F4FC14;
+  color: #333333;
+  cursor: pointer;
+  width: fit-content;
+  justify-self: start;
+}
+
 .special-item{
     display: grid;
     grid-template-columns: auto;
@@ -88,7 +101,7 @@ code {
 }
 
 .special-item button {
-    font-family: Markazi Text, serif;
+  font-family: Markazi Text, serif;
   font-size: 1.5rem;
   padding: 10px 20px;
   border: none;
@@ -294,6 +307,62 @@ footer section p {
   font-size: 0.85rem;
   color: #666;
 }
+
+/* Reservation Form */
+.reservation-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  font-family: Markazi Text, serif;
+}
+
+.reservation-form {
+  background-color: #495E57;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  text-align: center;
+}
+
+.reservation-form h2{
+  font-size: 2.2rem;
+  color: #F4FC14;
+  margin-bottom: 20px;
+}
+
+.reservation-form label {
+  font-size: 2rem;
+  max-width: 30%;
+  color:#495E57;
+  background-color: #F4FC14;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: block;
+  justify-self: center;
+  border-radius: 8px;;
+}
+
+.reservation-form input,
+.reservation-form select {
+  display: block;
+  width: 80%;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  color: #333333;
+  background-color: #EDEFEE;
+  justify-self: center;
+}
+/* Reservation Form */
 
 /* RESPONSIVE DESIGN */
 
