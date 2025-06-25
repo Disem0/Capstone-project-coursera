@@ -75,7 +75,7 @@ export default function ReservationForm() {
                 <option value="7">Seven people</option>
                 <option value="8">Eight people</option>
             </select>
-            <button type="submit">Reserve a table</button>
+            <button className="submit-reservation" type="submit">Reserve a table</button>
         </form>
     )
 }

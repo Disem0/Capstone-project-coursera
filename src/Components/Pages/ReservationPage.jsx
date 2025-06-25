@@ -5,7 +5,6 @@ export default function ReservationPage() {
         <>
             <section className="reservation-page">
                 <ReservationForm />
-                <p>We look forward to serving you!</p>
             </section>
         </>
     )

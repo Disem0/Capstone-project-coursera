@@ -324,8 +324,9 @@ footer section p {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   width: 100%;
   max-width: 700px;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: auto;
   gap: 20px;
   justify-content: center;
   text-align: center;
@@ -335,32 +336,51 @@ footer section p {
   font-size: 2.2rem;
   color: #F4FC14;
   margin-bottom: 20px;
+  display: grid;
+  grid-column: span 2;
+  text-align: center;
 }
 
 .reservation-form label {
   font-size: 2rem;
-  max-width: 30%;
   color:#495E57;
-  background-color: #F4FC14;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  display: block;
-  justify-self: center;
-  border-radius: 8px;;
+  background-color: #EDEFEE;
+  padding: 15px;
+  margin: 0;
+  border-radius: 8px;
+  display: grid;
+  text-align: center;
+  align-items: center;
+
 }
 
 .reservation-form input,
 .reservation-form select {
-  display: block;
-  width: 80%;
+  width: 90%;
   padding: 20px;
-  margin-bottom: 20px;
   border: none;
   border-radius: 8px;
   font-size: 1.5rem;
   color: #333333;
   background-color: #EDEFEE;
-  justify-self: center;
+}
+
+.reservation-form select{
+  width: 98.5%;
+}
+
+.submit-reservation {
+  display: grid;
+  grid-column: span 2;
+  justify-items: center;
+  width: 100%;
+  padding: 15px;
+  font-size: 1.8rem;
+  color:#333333;
+  background-color: #F4FC14;
+  border-radius: 16px;
+  border-color: none;
+  font-family: Markazi Text, serif;
 }
 /* Reservation Form */
 
